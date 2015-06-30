@@ -121,6 +121,8 @@
 \draw (1.7,2.6,26) circle[radius=0.1];
 \draw[dotted] (1.7,2.6,28) -- ++(0,0,-2);
 
+\
+
 % schrauben hinten und rechts vonre
 \foreach \z in {1.7,3.5,21.7,23.5} {
     % rechts vorne
@@ -143,7 +145,36 @@
     \draw[dotted] (-4,\z,24.3) -- ++(4,0,0);
 }
 
-
+% schrauben unten
+% \rechteck{12}{41.5}{8}{25}{3}{37};
+% schrauben
+\draw (1.7,47,-8.3) -- ++(0,7,0);
+\draw (1.7,47,24.3) -- ++(0,7,0);
+\draw[gray] (22.3,47,-8.3) -- ++(0,7,0);
+\draw (22.3,47,24.3) -- ++(0,7,0);
+% sichtbare dotts
+\draw[dotted] (1.7,44.5,-8.3) -- ++(0,2.5,0);
+\draw[dotted] (1.7,44.5,24.3) -- ++(0,2.5,0);
+\draw[dotted] (22.3,44.8,24.3) -- ++(0,2.2,0);
+% verdeckte dotts
+\draw[dotted,gray] (22.3,43,-8.3) -- ++(0,4,0);
+\draw[dotted,gray] (1.7,43,-8.3) -- ++(0,1.5,0);
+\draw[dotted,gray] (1.7,43,24.3) -- ++(0,1.5,0);
+\draw[dotted,gray] (22.3,43,24.3) -- ++(0,1.5,0);
+%schraubenköpfe
+\begin{scope}[canvas is xz plane at y=54, transform shape]
+    \draw (1.7,-8.3) circle[radius=0.4];
+    \draw (1.7,24.3) circle[radius=0.4];
+    \draw[gray] (22.3,-8.3) circle[radius=0.4];
+    \draw (22.3,24.3) circle[radius=0.4];
+\end{scope}
+% bohrmarker
+\begin{scope}[canvas is xz plane at y=43, transform shape]
+    \draw[gray] (1.7,-8.3) circle[radius=0.1];
+    \draw[gray] (1.7,24.3) circle[radius=0.1];
+    \draw[gray] (22.3,-8.3) circle[radius=0.1];
+    \draw[gray] (22.3,24.3) circle[radius=0.1];
+\end{scope}
 % maße
 
 \tikzstyle{dim}    = [latex-latex]
