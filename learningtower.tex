@@ -4,6 +4,18 @@
 \usetikzlibrary{3d}
 
 \begin{document}
+
+\begin{itemize}
+    \item 1x Ikea BEKV\"AM step stool
+    \item 4x ledge 400 x 34 x 34 [mm]
+    \item 4x ledge 172 x 52 x 34 [mm]
+    \item 2x ledge 292 x 52 x 34 [mm]
+    \item 1x roundwood  \diameter 20 x 312 [mm]
+    \item 1x forstner drill \diameter 20mm
+    \item 22x screws 4x50
+    \item 4x screws 5x70
+\end{itemize}
+
 \begin{tikzpicture}
 
 \newcommand{\rechteck}[6]
@@ -162,7 +174,7 @@
     \draw[dotted,gray] (35,\y,26) -- (24,\y,26);
 }
 \foreach \y/\label in {0.0/5.2,5.2/14.8,20/5.2,25.2/14.8} {
-    \draw[dim] (37,\y,26) -- ++(0,\label,0) node[midway,right,xshift=0.2cm] {\label$cm$};
+    \draw[dim] (37,\y,26) -- ++(0,\label,0) node[midway,right,xshift=0.2cm] {\label$ cm$};
 }
 
 \path (0,0,16) node[above] {$\diameter \: 2cm$};
